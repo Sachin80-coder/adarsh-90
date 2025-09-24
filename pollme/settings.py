@@ -26,6 +26,7 @@ SECRET_KEY = 'x*za6xf&_80ofdpae!yzq61g9ffikkx9$*iygbl$j7rr4wlf8t'
 DEBUG = True
 
 ALLOWED_HOSTS = ['adarsh-90-1.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://adarsh-90-1.onrender.com']
 
 
 # Application definition
