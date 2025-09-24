@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block custom_css %}
+<link rel="stylesheet" href="{% static 'css/home_style.css' %}">
+{% endblock custom_css %}
+
+{% block content %}
+<div class="container" style="min-height: 70vh; display: flex; align-items: center; justify-content: center;">
+    <div class="row w-100">
+        <div class="col text-center" id="home-content" style="background: linear-gradient(135deg, #667eea, #764ba2); padding: 60px 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(118, 75, 162, 0.4); color: white;">
+            <h1 style="font-weight: 800; font-size: 3rem; margin-bottom: 15px; text-shadow: 0 2px 8px rgba(0,0,0,0.3);">PollMe - Get Started!</h1>
+            <h3 style="font-weight: 500; font-style: italic; margin-bottom: 30px; text-shadow: 0 1px 5px rgba(0,0,0,0.25);">Your Voice Matters!</h3>
+            <hr style="border-top: 3px solid rgba(255,255,255,0.6); width: 60px; margin: 0 auto 40px;">
+            <a class="btn btn-light btn-lg" href="{% url 'polls:list' %}" role="button"
+               style="background: #fff; color: #764ba2; font-weight: 700; padding: 15px 50px; font-size: 1.25rem; border-radius: 50px; box-shadow: 0 6px 12px rgba(118, 75, 162, 0.5); text-decoration: none; transition: background-color 0.3s ease;">
+               Get Started !
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock content %}

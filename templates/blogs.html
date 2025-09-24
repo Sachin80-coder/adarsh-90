@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="display-4">Poll Me Blog</h1>
+                <p class="lead">Insights, tips, and stories from the world of polling and democracy</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Blog Content -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-8">
+
+            <!-- Featured Post -->
+            <div class="card blog-card mb-5">
+                <img src="https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&w=800" alt="Featured Post" class="blog-img">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <a href="#" class="blog-category">Featured</a>
+                        <div class="blog-meta">
+                            <i class="fas fa-calendar"></i> January 15, 2025
+                            <i class="fas fa-user ml-2"></i> Sarah Johnson
+                        </div>
+                    </div>
+                    <h2 class="card-title">The Future of Digital Democracy: How Online Polling is Changing Politics</h2>
+                    <p class="card-text">Explore how digital polling platforms are revolutionizing the way we gather public opinion and make democratic decisions.</p>
+                    <a href="#" class="btn btn-primary">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Blog Posts Grid -->
+            <div class="row">
+                <!-- Repeat below card for more posts -->
+                <div class="col-md-6">
+                    <div class="card blog-card">
+                        <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Blog Post" class="blog-img">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <a href="#" class="blog-category">Tips</a>
+                                <div class="blog-meta">
+                                    <i class="fas fa-calendar"></i> Jan 12, 2025
+                                </div>
+                            </div>
+                            <h5 class="card-title">10 Best Practices for Creating Effective Polls</h5>
+                            <p class="card-text">Learn the essential techniques for crafting polls that generate meaningful insights.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card blog-card">
+                        <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Blog Post" class="blog-img">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <a href="#" class="blog-category">Analytics</a>
+                                <div class="blog-meta">
+                                    <i class="fas fa-calendar"></i> Jan 10, 2025
+                                </div>
+                            </div>
+                            <h5 class="card-title">Understanding Poll Analytics: A Beginner's Guide</h5>
+                            <p class="card-text">Dive deep into poll analytics and learn how to interpret data to make informed decisions.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Blog pagination" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#">Previous</a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    
+
+                <!-- Recent Posts -->
+                <div class="sidebar-widget">
+                    <h5><i class="fas fa-clock text-primary"></i> Recent Posts</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Digital Democracy</li>
+                        <li class="list-group-item">Creating Effective Polls</li>
+                        <li class="list-group-item">Poll Analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
