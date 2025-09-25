@@ -17,11 +17,7 @@ def create_superuser(apps, schema_editor):
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        # IMPORTANT: Look in your 'accounts/migrations' folder.
-        # Change '0001_initial' to the name of your PREVIOUS migration file.
-        ('accounts', '0001_initial'), 
-    ]
+    dependencies = []
 
     operations = [
         migrations.RunPython(create_superuser),
